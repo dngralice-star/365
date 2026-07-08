@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365 Days ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="background-container" id="bg-container">
+        <!-- Floating hearts will be injected here via JS -->
+    </div>
+
+    <!-- Music Toggle -->
+    <button class="music-toggle" id="music-toggle" aria-label="Toggle Music">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path id="music-icon-path" d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+    </button>
+    <audio id="bg-music" loop>
+        <!-- Place a soft background music file here if desired, e.g. <source src="music.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <!-- Page 1: The Question -->
+    <section class="page active" id="page-1">
+        <div class="glass-card question-card">
+            <h2 class="subtitle">365 Days Completed ❤️</h2>
+            <p class="small-text">I have only one very important question...</p>
+            <h1 class="main-title" id="question-text">Can I still annoy you forever? 🥺</h1>
+            
+            <div class="buttons-container">
+                <button class="btn btn-yes" id="btn-yes">❤️ YES</button>
+                <button class="btn btn-no" id="btn-no">🙈 NO</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2: Love Letter -->
+    <section class="page hidden" id="page-2">
+        <div class="glass-card letter-card">
+            <h1 class="letter-title">TO Aashi ...</h1>
+            <div class="letter-content">
+                <p>"Yakeen sa hi nahi ho raha na... poora ek saal ho gaya.</p>
+                <p>Pata hi nahi chala kab itna waqt nikal gaya. </p>
+                <p>Aur dekh lo... ek time pe main tumhare <strong>"one of the most hated person"</strong> list mein tha. 😂 Ab thoda sa to rank improve hua hi hoga... (shayad?).</p>
+                <p>Waise ek confusion aaj tak solve nahi hui is ek saal mein mera <strong>cortisol</strong> zyada badha ya fir <strong>oxytocin</strong>? 🤔 Jo bhi hua ho... it was so so so so soooo worth it.</p>
+                <p>Yaad hai pehle din tumne bola tha, <strong>"Get you out of my mind."</strong><br>
+                Par ek problem hai... mind mein to tum ho hi nahi. Aur heart transplant ke mere paas paise nahi hain.. to ab thoda sa seh lo na pleaseeeee. 😌</p>
+                <p>Aur ek observation bhi hai... (thodi tareef karni padti hai, gareeb ki majboori. 😔)</p>
+                <p>I've seen you work incredibly hard, chase your goals, overthink things, laugh at the smallest stuff, and still keep moving forward. I genuinely admire that about you. You're much stronger than you show.</p>
+            
+                <p><strong>1/∞ completed.</strong> ✔️</p>
+                <p>Future ka nahi pata. Lekin Im glad ki main tumhe itna jaan paya. (Waise officially to shayad 1% se 1.000000001% hi hua hoga. 😂)</p>
+                <p>Aur haan... main abhi bhi bahut selfish hoon.</p>
+                <p>Chai ka pehla cup mujhe hi milna chahiye.</p>
+                <p>...Theek hai, <strong>Mehwash is an exception.</strong>  Uske saath no competition.</p>
+                <p>And thanksss....</p>
+                
+            </div>
+            <button class="btn btn-next" id="btn-next">There's one more surprise ❤️</button>
+        </div>
+    </section>
+
+    <!-- Page 3: Treasure Cards -->
+    <section class="page hidden" id="page-3">
+        <div class="glass-card treasure-container">
+            <h1 class="treasure-title">12 Choices Waiting For You ❤️</h1>
+            <div class="cards-grid" id="cards-grid">
+                <!-- Cards injected via JS -->
+            </div>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 25px;">
+                <button class="btn btn-yes" id="btn-shuffle">Shuffle & Hide</button>
+                <button class="btn btn-next" id="btn-to-review" style="margin-top: 0;">Long Term Review 👀</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4: Long Term Review -->
+    <section class="page hidden" id="page-4">
+        <div class="glass-card review-card">
+            <h1 class="treasure-title">LONG TERM REVIEW (DRS++)</h1>
+            <div class="table-wrapper">
+                <table class="review-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>First Impression</td><td>⭐⭐⭐</td></tr>
+                        <tr><td>Sense of Humour</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Reply Speed</td><td>⭐⭐⭐⭐☆</td></tr>
+                        <tr><td>Listener Level</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Emotional Support</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Overthinking Skills</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Annoying Ability</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Patience</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        
+                        <tr><td>Intelligence</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Song Recommendations</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Meme Quality</td><td>⭐⭐⭐⭐☆</td></tr>
+                        <tr><td>Photo/Selfie Quality</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Foodie</td><td>⭐⭐⭐⭐☆</td></tr>
+                        <tr><td>Roast Ability</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Random Mood Swings</td><td>⭐⭐⭐⭐⭐ </td></tr>
+                        <tr><td>Secret Keeper</td><td>⭐⭐⭐⭐⭐</td></tr>
+                        <tr><td>Trust Level</td><td>⭐⭐⭐⭐⭐</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Overall Vibe</td>
+                            <td>∞/10</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="notes-section">
+                <h2 class="notes-title">Additional Notes 📝</h2>
+                <textarea class="notes-input" placeholder="Write your thoughts here..."></textarea>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
